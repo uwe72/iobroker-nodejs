@@ -4,6 +4,18 @@ exports.getUwe2 = () => {
 }
 
 
+export class Buch {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+
+exports.getBuch = () => {
+    return new Buch("Lieblingsbuch1");
+}
+
+
+
 class Color {
     constructor(name, code) {
       this.name = name;
