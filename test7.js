@@ -1,39 +1,21 @@
-
-exports.getUwe2 = () => {
-    console.log("test9 inside uwe()");
+// book.js
+const favoriteBook = {
+    title: "The Guards",
+    author: "Ken Bruen"
 }
 
-
-export class Buch {
-    constructor(name) {
-      this.name = name;
+// a Book class using ES6 class syntax
+class Book {
+    constructor(title, author) {
+        this.title = title;
+        this.author = author;
     }
-  }
 
-exports.getBuch = () => {
-    return new Buch("Lieblingsbuch1");
+    describeBook() {
+        let description = this.title + " by " + this.author + ".";
+        return description;
+    }
 }
 
-
-
-class Color {
-    constructor(name, code) {
-      this.name = name;
-      this.code = code;
-    }
-  }
-  
-  const allColors = [
-    new Color('brightred', '#E74C3C'),
-    new Color('soothingpurple', '#9B59B6'),
-    new Color('skyblue', '#5DADE2'),
-    new Color('leafygreen', '#48C9B0'),
-    new Color('sunkissedyellow', '#F4D03F'),
-    new Color('groovygray', '#D7DBDD'),
-  ];
-  
-  exports.getRandomColor = () => {
-    return allColors[Math.floor(Math.random() * allColors.length)];
-  }
-  
-  exports.allColors = allColors;
+// exporting looks different from Node.js but is almost as simple
+export {favoriteBook, Book};
