@@ -29,9 +29,13 @@ class Person {
     }
   }
   
-  exports.Person = Person;
-  exports.Schüler = Schüler;
-  exports.Lehrer = Lehrer;
+  //exports.Person = Person;
+  //exports.Schüler = Schüler;
+  //exports.Lehrer = Lehrer;
+
+  module.exports = Person;
+  module.exports = Schüler;
+  module.exports = Lehrer;
 
 
   
