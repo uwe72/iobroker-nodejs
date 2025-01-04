@@ -23,7 +23,7 @@ class Buch  {
         } else if (weekday == 7) {
             weekdayAsString = "Sonntag";
         } else if (weekday == 0) {
-            weekdayAsString = "Sonntag2";
+            weekdayAsString = "Sonntag2121221";
         } else {
             weekdayAsString = "???";
         }
